@@ -163,6 +163,7 @@ input[type="checkbox"]:checked + label:before {
   }
   .bonus{
     padding-top: unset;
+    background: unset;
   }
 }
 @media (min-width: 1024px) {
@@ -175,26 +176,28 @@ input[type="checkbox"]:checked + label:before {
     margin-top: 10%;
     position: relative;
   }
-  /* .pers_dsktop {
+  .pers_dsktop {
     display: block;
     position: absolute;
-  } */
+  }
   .steps {
     order: unset;
+  }
+ 
+  /* .center {
+    margin-right: 8%;
+  } */
+ 
+}
+@media (min-width: 1365px) {
+  .pers_dsktop {
+    opacity: 1;
+    visibility: visible;
+    margin: 3% 6%;
   }
   .form {
     left: 430px;
     position: relative;
     bottom: 430px;
-  }
-  .center {
-    margin-right: 8%;
-  }
- 
-}
-@media (min-width: 1420px) {
-  .pers_dsktop {
-    opacity: 1;
-    visibility: visible;
   }
 }
