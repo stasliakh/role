@@ -37,6 +37,7 @@ header {
   padding-top: 20px;
 }
 .pers_dsktop {
+  display: none;
   position: fixed;
   opacity: 0;
   transition: .55s opacity, .55s visibility;
@@ -94,6 +95,9 @@ header {
   border-radius: 5px;
   outline: none;
   border: none;
+}
+.form input:hover{
+  background-color: rgba(150, 139, 248, 0.4);
 }
 input::placeholder {
   color: rgb(182, 178, 178);
@@ -153,6 +157,11 @@ input[type="checkbox"]:checked + label:before {
   font-size: 18px;
   color: white;
   background-color:#12C765;
+  border: none;
+  transition-duration: 0.2s;
+}
+.btn_claim:hover {
+  background-color: #4cb5e2;
 }
 
 @media (min-width: 768px) {
@@ -191,6 +200,7 @@ input[type="checkbox"]:checked + label:before {
 }
 @media (min-width: 1365px) {
   .pers_dsktop {
+    display: block;
     opacity: 1;
     visibility: visible;
     margin: 3% 6%;
@@ -199,5 +209,8 @@ input[type="checkbox"]:checked + label:before {
     left: 430px;
     position: relative;
     bottom: 430px;
+  }
+  .bonus{
+    margin-top: 10%;
   }
 }
